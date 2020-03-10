@@ -3,15 +3,15 @@
 * 实现自定义包发布到npm;
     1. npm init 初始化
 
-        package name：yunfei        //插件名称
-        version: (1.0.0)            //版本；修改后的插件，再次上传，需修改版本号
-        description:                //插件描述
-        entry point:(index.js)      //入口文件（默认index.js）
-        test command:               //测试脚本命令
-        git repository:             //相应的github仓库地址，方便他人读取源码
-        keyword:                    //关键词，便于npm 搜索
-        author:yunfei               //作者
-        license:(ISC)               //执照
+        + package name：yunfei        //插件名称
+        + version: (1.0.0)            //版本；修改后的插件，再次上传，需修改版本号
+        + description:                //插件描述
+        + entry point:(index.js)      //入口文件（默认index.js）
+        + test command:               //测试脚本命令
+        + git repository:             //相应的github仓库地址，方便他人读取源码
+        + keyword:                    //关键词，便于npm 搜索
+        + author:yunfei               //作者
+        + license:(ISC)               //执照
 
     2. npm login    //登录
     3. npm addUser  //分别输入用户名、密码、邮箱
@@ -21,14 +21,14 @@
 
     - 优点：
 
-        1. 便于管理企业内的业务组件或模块；
-        2. 私密性；
-        3. npm模块的稳定快速和安全；
+        + 便于管理企业内的业务组件或模块；
+        + 私密性；
+        + npm模块的稳定快速和安全；
     
     - 方案：
 
-        1. git + ssh方式；
-        2. verdaccio；
+        + git + ssh方式；
+        + verdaccio；
 
     - 实施（方案2）：
         + 安装verdaccio
@@ -37,8 +37,8 @@
         + 浏览器地址[http://localhost:4873/](http://localhost:4873/)即可查看私有库
         + 同时在配置文件内设置 ` listen: 0.0.0.0:4873 `；实现外网访问
         + 配置文件如下：
-        (```)
-            #
+        
+        `   #
             # This is the default config file. It allows all users to do anything,
             # so don't use it on production systems.
             #
@@ -113,7 +113,7 @@
             #  # support for npm token command
             #  token: false
 
-        (```)
+        `
 
         + 当前npm服务指向 私有npm 地址
         ` npm set registry http://localhost:4873 `
