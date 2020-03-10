@@ -29,10 +29,10 @@
 
     | 实施（方案2）：
         - 安装verdaccio
-        ``` npm install -g verdaccio ```
+        ` npm install -g verdaccio `
         - 安装完成后 直接运行verdaccio即可
         - 浏览器地址[http://localhost:4873/](http://localhost:4873/)即可查看私有库
-        - 同时在配置文件内设置 ``` listen: 0.0.0.0:4873 ```；实现外网访问
+        - 同时在配置文件内设置 ` listen: 0.0.0.0:4873 `；实现外网访问
         - 配置文件如下：
         (```)
             #
@@ -113,13 +113,13 @@
         (```)
 
         - 当前npm服务指向 私有npm 地址
-        ``` npm set registry http://localhost:4873 ```
+        ` npm set registry http://localhost:4873 `
         - 注册用户（用户名 密码 邮箱）
-        ``` npm adduser -registry http://localhost:4873 ```
+        ` npm adduser -registry http://localhost:4873 `
         - 查看用户是否注册
-        ``` npm who am i ```
+        ` npm who am i `
         - 上传私有云
-        ``` npm publish --registry=http://localhost:4873 ```
+        ` npm publish --registry=http://localhost:4873 `
 
 ## 附件
 
