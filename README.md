@@ -2,7 +2,7 @@
 
 * 实现自定义包发布到npm;
     1. npm init 初始化
-    (```)
+    `
         package name：yunfei        //插件名称
         version: (1.0.0)            //版本；修改后的插件，再次上传，需修改版本号
         description:                //插件描述
@@ -12,7 +12,7 @@
         keyword:                    //关键词，便于npm 搜索
         author:yunfei               //作者
         license:(ISC)               //执照
-    (```)
+    `
     2. npm login    //登录
     3. npm addUser  //分别输入用户名、密码、邮箱
     4. npm publish  //直接发布
